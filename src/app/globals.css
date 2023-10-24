@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+  background: #000;
+  color: #fff;
+}
+
+/*Scrollbar*/
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Estilo de la barra de desplazamiento de Chrome */
+::-webkit-scrollbar-thumb {
+  background-color: #3d8c66;
+  border-radius: 6px;
+}
+
+/* Estilo del fondo de la barra de desplazamiento de Chrome */
+::-webkit-scrollbar-track {
+  background-color: #404040;
+}
+
+/* Estilo del botón superior de la barra de desplazamiento de Chrome */
+::-webkit-scrollbar-button:start {
+  background-color: #000000;
+}
+
+/* Estilo del botón inferior de la barra de desplazamiento de Chrome */
+::-webkit-scrollbar-button:end {
+  background-color: #000000;
+}
