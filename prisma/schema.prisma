@@ -18,9 +18,9 @@ model User {
 // Definición del modelo de Películas
 model Movie {
   id          String     @id @default(auto()) @map("_id") @db.ObjectId
-  name        String
+  title       String
   synopsis    String
-  duration    Int
+  duration    String
   releaseDate DateTime
   ageRating   String
   bannerImage String

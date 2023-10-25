@@ -2,7 +2,8 @@ import { getServerSession } from "next-auth";
 
 import { redirect } from "next/navigation";
 import { authOptions } from "../api/auth/[...nextauth]/route";
-import TestComponent from "@/components/test-component";
+import DashboardHeader from "@/components/dashboard-header";
+import SlidesBanner from "@/components/slides-banner";
 
 export default async function MainPage() {
   const session = await getServerSession(authOptions);
@@ -12,10 +13,9 @@ export default async function MainPage() {
   }
 
   return (
-    <div>
-      <h1>Helo</h1>
-      <h1>{session?.user?.name}</h1>
-      <TestComponent />
-    </div>
+    <main className="min-h-screen">
+      <DashboardHeader />
+      <SlidesBanner />
+    </main>
   );
 }
